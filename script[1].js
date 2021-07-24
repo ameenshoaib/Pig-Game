@@ -35,6 +35,7 @@ const init = function () {
 };
 init();
 
+// Switch player function
 const switchPlayer = function () {
   document.getElementById(`current--${activePlayer}`).textContent = 0;
   currentScore = 0;
@@ -67,6 +68,7 @@ btnRoll.addEventListener('click', function () {
   }
 });
 
+// Button hold functionality
 btnHold.addEventListener('click', function () {
   if (playing) {
     // 1. Add current score to active player's score
@@ -95,4 +97,5 @@ btnHold.addEventListener('click', function () {
   }
 });
 
+// New game button
 btnNew.addEventListener('click', init);
